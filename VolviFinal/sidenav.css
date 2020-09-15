@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+	
+	<body>
+		<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+			<div class="sidenav">
+				<img src="volvi12.jpg"  style="border-radius:50%"><hr>
+				<a href="myProfile.php" style="color:white">Your Profile/Edit</a><hr>
+				<a href="eventfinal.php" style="color:white">Search for Events</a><hr>
+				<a href="Index.php" style="color:white">Logout</a><hr>
+			</div>
+			
+<style>
+	body {
+		font-family: "Lato", sans-serif;
+	}
+
+	.sidenav {
+		height: 100%;
+		width: 20%;
+		position: absolute;
+		z-index: -1;
+		top: 25%;
+		left: 0;
+		background-color: #73004b;
+		overflow-x: hidden;
+		padding-top: 20px;
+		box-shadow: 0 20px 50px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.20);
+	}
+
+	.sidenav a {
+		padding: 6px 8px 6px 16px;
+		text-decoration: none;
+		font-size: 25px;
+		color: #818181;
+		display: block;
+		font-family: Raleway;
+		text-shadow: 1px 1px grey;
+	}
+
+	.sidenav a:hover {
+		color: #800053;
+	}
+
+	@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+	}
+
+</style>
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<section>
+			<img src="volvi13.jpg" height="120" width="320">
+			<img src="volvi14.jpg" height="120" width="320" align=right >
+
+			<!Creating the menus that will be shown on the fixed bar for all the pages>
+			<nav class="navbar-menu">
+				<ul class="menu">
+					<li><a href="index.php">Home</a></li>
+					<li><a href="visitor.php">Visitor</a>
+					
+				<ul class="submenu one">
+					<li><a href="visitor.php#S1">Before You Start</a></li>
+					<li><a href="visitor.php#S2">The Experience</a></li>
+					<li><a href="visitor.php#S3">How Does it Work</a></li>
+					<li><a href="visitor.php#S4">Register Now</a></li>
+					<li><a href="logPage.php">Login as a Visitor</a></li>
+				</ul></li>
+					<li><a href="HomeCare.php">Nursing Home</a>
+					
+				<ul class="submenu two">
+					<li><a href="HomeCare.php#S1">Find Your Perfect Visitor</a></li>
+					<li><a href="HomeCare.php#S2">Be Part of It</a></li>
+					<li><a href="HomeCare.php#S3">Register Your Home</a></li>
+					<li><a href="logPageHome.php">Login as a Home</a></li>
+				</ul></li>
+		  
+					<li><a>Events</a>
+				<ul class="submenu three">
+					<li><a href="Event.php">What's going on</a></li>
+				</ul></li>
+			 
+					<li><a href="AboutUs.php">About Us</a>
+				</ul></li>
+				</ul>
+			</nav>
+
+<!styling the menu>
+<style>
+* {
+	margin: 0;
+	padding: 0; 
+}
+
+html{
+  font-family: segoe ui;
+  font-size: 100%;
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+a {
+  color: #fff;
+  cursor: pointer;
+  display: block;
+  padding: 1rem 1.5rem;
+  max-width: 200px;
+}
+
+a:hover {
+  background-color: #990063;
+}
+
+a:link{
+	text-decoration: none;
+}
+
+.navbar-menu{
+	margin: 0px;
+  background-color: #73004b; 
+  width: calc(100%);
+  border-top:5px solid #fed410;
+}
+
+.navbar-menu .menu{
+  display: block;
+  text-align: center;
+}
+
+.navbar-menu .menu li{
+  display: inline-block;
+}
+
+/*animation for the submenu when hoovered*/
+.navbar-menu .menu li:hover > .submenu{
+  display: block;
+  -webkit-animation-name: showSubMenu;
+  -webkit-animation-duration: .4s;
+}
+
+.navbar-menu .menu li ul{
+  background-color: #73004b;
+  opacity: 0.9;
+  display: none;
+  position: absolute;
+  z-index:30;
+}
+
+.navbar-menu .menu li ul li{
+  display: block;
+}
+
+@-webkit-keyframes showSubMenu{
+    0% {
+      transform: scale(0,0);
+    }
+  100% {
+    transform: scale(1,1);
+  }
+
+}
+</style>
+</section>
+</head>
+</html>
